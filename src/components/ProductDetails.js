@@ -82,8 +82,8 @@ const ProductDetails = () => {
                 <span>Tahmini Kargoya Teslim:</span> 2 gün içinde
               </div>
               <div className="fav-ratings">
-              <i class="far fa-heart"></i>
-                7831 favori
+                <i class="far fa-heart"></i>
+                  7831 favori
               </div>
             </div>
             <hr className="horizontal"></hr>
@@ -91,7 +91,7 @@ const ProductDetails = () => {
               <span>Öne Çıkan Bilgiler</span>
               madde madde ...
             </div>
-            <button className="product-features">Ürünün Tüm Özellikleri</button>
+            <Button className="product features">ÜRÜNÜN TÜM ÖZELLİKLERİ</Button>
           </div>
         </div>
       </main>

@@ -2,7 +2,7 @@
 @import "./mixin.scss";
 
 .product-detail {
-  border: 1px solid black;
+  
   width: 100%;
   height: auto;
   display: flex;
@@ -14,8 +14,8 @@
   .container {
     border: 1px solid $border;
     border-radius: 0.4rem;
-    box-shadow: 0.7px 0.7px 5px 0 $border;
-    width: 60%;
+    box-shadow: 0.7px 0.7px 4px 0 $border;
+    width: 50%;
     height: 80vh;
     padding: 0.6rem;
     display: flex;
@@ -79,6 +79,9 @@
         a {
           text-decoration: none;
           color: #4d8ee1;
+          &:hover{
+            text-decoration: underline;
+          }
         }
       }
       .ratings {
@@ -121,7 +124,7 @@
       }
 
       .horizontal {
-        width: 38rem;
+        width: 30rem;
         color: $sub-text;
         opacity: 0.2;
       }
@@ -132,6 +135,8 @@
         .far {
           display: flex;
           border: 1px solid $border;
+    box-shadow: 0.7px 0.7px 4px 0 $border;
+
           border-radius: 0.3rem;
           font-size: 1.5rem;
           padding: 0.6rem;
@@ -157,9 +162,45 @@
           color: $orange;
         }
       }
-      .sub-text{
+      .sub-text {
         display: flex;
-        
+        font-size: 0.65rem;
+        color: $sub-text;
+        margin: 1rem 0;
+        span {
+          font-weight: 700;
+          color: black, 0.9;
+        }
+        .fav-ratings {
+          margin-left: 14rem;
+          i {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+      .product-info1 {
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+        span {
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+    .features {
+      border: 0.5px solid rgba(0,0,0,0.3);
+      background-color: transparent;
+      color: black;
+      font-size: smaller;
+      font-weight: 500;
+      opacity: 0.7;
+
+      &:hover {
+        border: 1px solid $orange;
+        color: $orange;
+        font-size: smaller;
+        font-weight: 400;
       }
     }
   }
